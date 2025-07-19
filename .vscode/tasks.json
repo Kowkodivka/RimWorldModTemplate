@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build DLL (Linux)",
+            "type": "shell",
+            "command": ".vscode/scripts/build.sh"
+        },
+        {
+            "label": "Launch RimWorld via Steam (Linux)",
+            "type": "shell",
+            "command": "steam steam://run/294100",
+            "dependsOn": ["Build DLL"],
+            "dependsOrder": "sequence"
+        }
+    ]
+}
