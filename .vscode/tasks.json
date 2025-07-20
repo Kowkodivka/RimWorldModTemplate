@@ -10,7 +10,7 @@
             "label": "Launch RimWorld via Steam (Linux)",
             "type": "shell",
             "command": "steam steam://run/294100",
-            "dependsOn": ["Build DLL"],
+            "dependsOn": ["Build DLL (Linux)"],
             "dependsOrder": "sequence"
         }
     ]
